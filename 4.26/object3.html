@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj = {}
+
+        Object.defineProperty(obj,"sex",{
+            value: "Male",
+            configurable: true,
+            writable:true,
+            enumerable:true,
+        })
+
+        Object.defineProperty(obj,"age",{
+            value:11
+        })
+
+        obj.email = "zhangsan@qq.com"
+        console.log(obj)
+
+        for(k in obj){
+            
+        }
+    </script>
+</body>
+</html>
