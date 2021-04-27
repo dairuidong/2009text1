@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button id="btn">点击</button>
+      </div>
+      <div>
+        <p class="p1">AAAAA</p>
+        <p class="p1">BBBBB</p>
+        <p class="p1">CCCCC</p>
+        <p class="p1">DDDDD</p>
+    
+        <span>AAAA</span>
+        <span>VBBB</span>
+        <span>CCCC</span>
+      </div>
+</body>
+</html>
+<script>
+     function $(add) {
+                 var i = add[0]
+            
+            var arr = null
+            if(i=="#") {
+                 arr = document.querySelector(add)
+             }else if(i==".") {
+                 arr = document.querySelectorAll(add)
+             }else{
+                 arr = document.getElementsByTagName(add)
+             }
+            return arr
+         }
+console.log($(".p1"));
+console.log($("#btn"));
+console.log($("span"));
+
+</script>
