@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function func(n,o){
+        console.log(o)
+        return{
+            func:function(m){
+                return func(m,n);
+            }
+        };
+    }
+    var a = func(0); a.func(1);a.func(2);a.func(3);  //输出结果undefined,0,0,0
+</script>
