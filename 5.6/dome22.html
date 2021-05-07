@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class Person{
+        constructor(name,sex,age){
+            this.name = name;
+            this.sex = sex;
+            this.age = age;
+        }
+        say(){
+            console.log(this.name+"正在讲话");
+        }
+    }
+    let p1 = new Person("老子","男",0);
+    class Asian extends Person{
+        constructor(name,sex,age){
+            super(name,sex,age);
+        }
+    }
+    let a1 = new Asian("孔子","男",0);
+    class Chinese extends Asian{
+
+    }
+    let c1 = new Asian("孟子","男",0);
+    console.log(c1)
+    c1.say()
+</script>

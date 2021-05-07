@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class Person {
+        constructor(name,age){
+            this.name = name
+            this.age = age
+        }
+        // 静态属性
+        static number = 0
+
+        // 静态方法
+        static say(){
+            console.log("嘿嘿")
+        }
+
+        // 实例的方法
+        eat(){
+            console.log(this.name,"正在吃")
+        }
+    }
+    Person.say()  //访问静态方法
+    console.log(Person.number)  //访问静态属性
+    let p1 = new Person("代瑞栋",23)
+    p1.eat()
+</script>

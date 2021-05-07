@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function Person(name,age){
+        this.name = name
+        this.age = age
+    }
+    Person.prototype.say = function(){
+        console.log(this.name,this.age)
+    }
+    let p1 = new Person("代瑞栋",23)
+    let p2 = new Person("琳琳",21)
+    console.log(p1)
+    console.log(p2)   //ES6之前   new+构造函数
+</script>
