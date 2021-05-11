@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../vue/vue.2.6.12.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>性别</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>代瑞栋</td>
+                    <td>23</td>
+                    <td>男</td>
+                    <td>
+                        <a href="javascript:;">删除</a> | <a href="javascript:;">修改</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>周忠旺</td>
+                    <td>-10</td>
+                    <td>女</td>
+                    <td>
+                        <a href="javascript:;">删除</a> | <a href="javascript:;">修改</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>张贺阴</td>
+                    <td>23</td>
+                    <td>男</td>
+                    <td>
+                        <a href="javascript:;">删除</a> | <a href="javascript:;">修改</a>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+</body>
+</html>
+<script>
+    let p1 = new Vue({
+        el:"#app",
+        data:{},
+        methods: {
+            
+        },
+    })
+</script>

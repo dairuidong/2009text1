@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/vue.js"></script>
+    
+</head>
+<body>
+    <div id="app">
+        <button v-on:click="hello1">aaa</button>
+        <button v-on:click="hello2">bbb</button>
+    </div>
+</body>
+</html>
+<script>
+    new Vue({
+        el: "#app",
+        data:{},
+        methods: {
+            hello1(){
+                alert(1111)
+            },
+            hello2(){
+                alert(222)
+            }
+        },
+    })
+</script>
