@@ -43,12 +43,12 @@
                 <label for="id">
                   编号：
                 </label>
-                <input type="text" id="id">
+                <input type="text" id="id" v-model="id">
                 <label for="name">
                   名称：
                 </label>
-                <input type="text" id="name">
-                <button>提交</button>
+                <input type="text" id="name" v-model="name">
+                <button v-on:click="add">提交</button>
               </div>
             </div>
           </div>
@@ -83,9 +83,24 @@
     new Vue({
         el:"#app",
         data:{
+          id:"",
+          name:"",
           list:[]  //数组列表
         },
         methods: {
+          add(){
+            let obj = {};
+            obj.id=this.id;
+            obj.name=this.name;
+
+            let now=new Date();
+            let y = now.getFullYear();
+            let m = now.getMonth();
+            let d = now.getDate();
+            let ymd = `${y}-${m+1}-${d}`;
+            obj.time = ymd
+            this.list.push(obj)
+          },
           // 删除方法
           del(i){
             this.list.splice(i,1)
