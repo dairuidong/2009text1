@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let obj = {
+        name: "代瑞栋",
+        age: 23,
+        sex: "Male"
+    }
+    // 定义一个生成器函数，作为迭代器接口
+
+    function * it(){
+        yield "aaa"
+        yield "bbb"
+        yield "ccc"
+    }
+    console.log(Object.prototype)
+    Object.prototype[Symbol.iterator] = xxx
+
+    for(v of obj){
+        console.log(v)
+    }
+</script>
